@@ -1,0 +1,97 @@
+
+.flex {
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        text-align: center;
+
+        input {
+            text-align: center;
+        }
+        .btn, .select-file {
+            position: relative;
+            display: inline-block;
+            width: auto;
+            height: auto;
+            background-color: #26532b;
+            border: none;
+            cursor: pointer;
+            min-width: 150px;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            line-height: 1;
+            margin: 0 auto 10px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1em;
+        }
+
+        .btn {
+            border: 2px solid #26532b;
+
+            &:hover {
+                    color: white;
+                    background-color: #077187;
+                    border-color: #077187;
+            }
+        }
+
+        .select-file {
+            background: white;
+            border: 2px solid #26532b;
+            color: #26532b;
+
+            &:hover {
+                background-color: #26532b;
+                color: white;
+            }
+        }
+    }
+}
+
+h1 {
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin: 0 auto 40px;
+    line-height: 1;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+table {
+    min-width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding: 12px 15px;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+#fileName {
+    display: none;
+
+    &.active {
+        margin: 0 0 10px;
+        display: block;
+    }
+}
